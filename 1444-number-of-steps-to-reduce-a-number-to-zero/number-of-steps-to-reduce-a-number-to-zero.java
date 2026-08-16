@@ -1,18 +1,18 @@
 class Solution {
     public int numberOfSteps(int num) {
-        if(num==0){
+       
+       return call(num);
+    }
+    public static int call(int num){
+         if(num==0){
             return 0;
         }
-       return call(num,1);
-    }
-    public static int call(int num,int c){
         if(num==1){
-            return c;
+            return 1;
         }
-        if(num%2!=0){
-            num=num-1;
-            c=c+1;
+        if(num%2==0){
+            return 1+call(num/2);
         }
-       return call(num/2,c+1);
+        return 2+call((num-1)/2);
     }
 }
