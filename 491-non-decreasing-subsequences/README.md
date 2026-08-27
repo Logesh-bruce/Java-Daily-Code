@@ -7,7 +7,7 @@
 <strong>Input:</strong> nums = [4,6,7,7]
 <strong>Output:</strong> [[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
 </pre>
-
+ 
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
